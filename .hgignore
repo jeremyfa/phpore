@@ -1,0 +1,14 @@
+syntax: glob
+.DS_Store
+*~
+.settings
+.cache
+.directory
+.buildpath
+.project
+*.orig
+
+syntax: regexp
+^cache/.*
+^config/config\.yml$
+^log/.*
