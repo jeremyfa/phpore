@@ -3,11 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Serveur: localhost
--- Généré le : Dim 29 Août 2010 à 16:15
+-- Généré le : Dim 29 Août 2010 à 18:43
 -- Version du serveur: 5.1.37
 -- Version de PHP: 5.2.11
-
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -33,7 +31,7 @@ CREATE TABLE `phpore_battles` (
   `music` varchar(255) NOT NULL DEFAULT '',
   `background` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) TYPE=MyISAM AUTO_INCREMENT=1 ;
 
 --
 -- Contenu de la table `phpore_battles`
@@ -53,7 +51,7 @@ CREATE TABLE `phpore_battles_vars` (
   `name` varchar(255) NOT NULL DEFAULT '',
   `value` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) TYPE=MyISAM AUTO_INCREMENT=1 ;
 
 --
 -- Contenu de la table `phpore_battles_vars`
@@ -74,7 +72,7 @@ CREATE TABLE `phpore_chatbox` (
   `time` int(11) NOT NULL DEFAULT '0',
   `message` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=385 ;
+) TYPE=MyISAM  AUTO_INCREMENT=385 ;
 
 --
 -- Contenu de la table `phpore_chatbox`
@@ -113,7 +111,7 @@ CREATE TABLE `phpore_classes` (
   PRIMARY KEY (`classname`),
   UNIQUE KEY `classname` (`classname`),
   KEY `classname_2` (`classname`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) TYPE=MyISAM;
 
 --
 -- Contenu de la table `phpore_classes`
@@ -154,7 +152,7 @@ CREATE TABLE `phpore_config` (
   `optimize_maps` tinyint(1) NOT NULL DEFAULT '0',
   `locked` tinyint(1) NOT NULL DEFAULT '0',
   `vars_test` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) TYPE=MyISAM;
 
 --
 -- Contenu de la table `phpore_config`
@@ -180,7 +178,7 @@ CREATE TABLE `phpore_events` (
   `script` text NOT NULL,
   `layer` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=39 ;
+) TYPE=MyISAM  AUTO_INCREMENT=39 ;
 
 --
 -- Contenu de la table `phpore_events`
@@ -206,7 +204,7 @@ CREATE TABLE `phpore_guilds` (
   `id` int(11) NOT NULL DEFAULT '0',
   `title` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) TYPE=MyISAM;
 
 --
 -- Contenu de la table `phpore_guilds`
@@ -229,7 +227,7 @@ CREATE TABLE `phpore_maps` (
   `music` varchar(255) NOT NULL DEFAULT '',
   `optimized` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+) TYPE=MyISAM  AUTO_INCREMENT=16 ;
 
 --
 -- Contenu de la table `phpore_maps`
@@ -258,7 +256,7 @@ CREATE TABLE `phpore_monsters` (
   `picture` varchar(255) NOT NULL DEFAULT '',
   `skills` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) TYPE=MyISAM  AUTO_INCREMENT=2 ;
 
 --
 -- Contenu de la table `phpore_monsters`
@@ -288,7 +286,7 @@ CREATE TABLE `phpore_opponents` (
   `picture` varchar(255) NOT NULL DEFAULT '',
   `skills` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) TYPE=MyISAM AUTO_INCREMENT=1 ;
 
 --
 -- Contenu de la table `phpore_opponents`
@@ -308,7 +306,7 @@ CREATE TABLE `phpore_skills` (
   `php` text NOT NULL,
   `javascript` text NOT NULL,
   PRIMARY KEY (`name`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) TYPE=MyISAM;
 
 --
 -- Contenu de la table `phpore_skills`
@@ -328,7 +326,7 @@ CREATE TABLE `phpore_tilesets` (
   `tiles` text NOT NULL,
   `cols` tinyint(2) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=73 ;
+) TYPE=MyISAM  AUTO_INCREMENT=73 ;
 
 --
 -- Contenu de la table `phpore_tilesets`
@@ -395,12 +393,12 @@ CREATE TABLE `phpore_users` (
   `battle_gain_points` int(11) NOT NULL DEFAULT '0',
   `battle_last_action` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) TYPE=MyISAM  AUTO_INCREMENT=4 ;
 
 --
 -- Contenu de la table `phpore_users`
 --
 
 INSERT INTO `phpore_users` VALUES(1, '', '', '', 0, 0, 0, 0, '', 0, '0,0,0', 0, 0, 0, 'a:0:{}', 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, '', '', 0, 0, '0', '', 0, '', '', '', '', 0, 0, 0, 0, 0, 0, 'a:0:{}', 0, 0, 0, 0, 0, 0, 0);
-INSERT INTO `phpore_users` VALUES(2, 'admin', 'jeremy.faivre@gmail.com', '1a1dc91c907325c69271ddf0c944bc72', 1, 1283077590, 1283048332, 0, '', 0, '99,135,0', 400, 0, 1, 'a:2:{s:5:"vault";s:3:"500";s:4:"loan";s:1:"0";}', 582, 34, 0, 0, 354, 347, 120, 157, 0, 1, '', '', 0, 0, 'fighter', '', 0, '', '0', '', 'default', 14, 15, 11, 5, 0, 1390, 'a:17:{i:1374;s:4:"a3-8";i:1375;s:4:"a2-8";i:1376;s:4:"a3-9";i:1377;s:5:"a3-10";i:1378;s:5:"a3-11";i:1379;s:5:"a3-12";i:1380;s:5:"a3-13";i:1381;s:5:"a3-14";i:1382;s:5:"a3-15";i:1383;s:5:"a4-15";i:1384;s:5:"a5-15";i:1385;s:8:"teleport";i:1386;s:5:"a11-1";i:1387;s:5:"a11-2";i:1388;s:5:"a11-3";i:1389;s:5:"a11-4";i:1390;s:5:"a11-5";}', 101, 0, 0, 0, 0, 0, 0);
+INSERT INTO `phpore_users` VALUES(2, 'admin', 'admin@mywebsite.com', '1a1dc91c907325c69271ddf0c944bc72', 1, 1283098816, 1283048332, 0, '', 0, '99,135,0', 400, 0, 1, 'a:2:{s:5:"vault";s:3:"500";s:4:"loan";s:1:"0";}', 582, 34, 0, 0, 412, 404, 140, 183, 0, 1, '', '', 0, 0, 'fighter', '', 0, '', '0', '', 'default', 14, 15, 11, 5, 0, 1390, 'a:17:{i:1374;s:4:"a3-8";i:1375;s:4:"a2-8";i:1376;s:4:"a3-9";i:1377;s:5:"a3-10";i:1378;s:5:"a3-11";i:1379;s:5:"a3-12";i:1380;s:5:"a3-13";i:1381;s:5:"a3-14";i:1382;s:5:"a3-15";i:1383;s:5:"a4-15";i:1384;s:5:"a5-15";i:1385;s:8:"teleport";i:1386;s:5:"a11-1";i:1387;s:5:"a11-2";i:1388;s:5:"a11-3";i:1389;s:5:"a11-4";i:1390;s:5:"a11-5";}', 101, 0, 0, 0, 0, 0, 0);
 INSERT INTO `phpore_users` VALUES(3, 'Gazouille', 'youpi@youpi.com', '538e957924f0770b415f473ce900d686', 0, 1258317074, 1258317074, 0, '', 1, '0,0,0', 0, 0, 1, 'a:0:{}', 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, '', '', 0, 0, 'gargouille', '', 0, '', '0', '', 'map', 15, 14, 4, 13, 0, 87, 'a:17:{i:71;s:4:"a4-5";i:72;s:4:"a5-5";i:73;s:4:"a6-5";i:74;s:4:"a6-4";i:75;s:4:"a6-5";i:76;s:4:"a5-5";i:77;s:4:"a5-6";i:78;s:4:"a5-7";i:79;s:4:"a4-7";i:80;s:4:"a3-7";i:81;s:4:"a3-8";i:82;s:4:"a3-9";i:83;s:5:"a3-10";i:84;s:5:"a3-11";i:85;s:5:"a4-11";i:86;s:5:"a4-12";i:87;s:5:"a4-13";}', 8, 0, 0, 0, 0, 0, 0);
