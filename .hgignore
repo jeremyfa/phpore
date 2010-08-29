@@ -10,5 +10,5 @@ syntax: glob
 
 syntax: regexp
 ^cache/.*
-^includes/config\.yml$
+^includes/config\.php$
 ^log/.*
