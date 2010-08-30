@@ -19,6 +19,7 @@ if ( !defined('IN_PHPORE') )
 	exit;
 }
 
+$config->cache_dir = 'cache';
 $config->table_prefix = 'phpore_';
 $config->db_type = 'mysql4';
 $config->db_name = 'phpore_demo';

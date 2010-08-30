@@ -16,6 +16,7 @@ Working on php >= 4.3
 * Import phpore.sql into your MySQL database
 * Copy includes/sample.config.php to includes/config.php
 * Edit includes/config.php with your own database user/password/host
+* Create a folder named "cache" in the project root and ensure php can write inside
 * Connect to admin/pass account and change your passord
 * You are ready to create the best game of the world!
 
