@@ -1,9 +1,13 @@
 PHPore
 ======
 
-Online RPG Editor written in php. Personal project from 2005. 
+Online RPG Editor written in php. Personal project from 2005.
 
-Written by Jeremy Faivre ([http://www.jeremyfaivre.com](http://www.jeremyfaivre.com))
+![PHPORE screenshot](screenshot.png)
+
+Play a demo game at: http://phpore.free.fr
+
+Written by Jeremy Faivre ([http://jeremyfa.com](http://jeremyfa.com))
 
 WARNING: this is old-fashion code. I was a teenager when I wrote this engine.
 
